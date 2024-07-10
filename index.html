@@ -45,6 +45,51 @@
               <label for="title" class="block">Título</label>
               <input type="text" name="title" id="title" placeholder="Nome do evento">
             </div>
+
+            <div class="flex gap-16 margin-top-16">
+              <div class="input-wrapper flex-1">
+                <label for="start" class="block">Início</label>
+                <input type="date" name="start" id="start" placeholder="Nome do evento">
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="end" class="block">Fim</label>
+                <input type="date" name="end" id="end" placeholder="Nome do evento">
+              </div>
+            </div>
+
+            <div class="flex gap-16 margin-top-16">
+              <div class="input-wrapper flex-1">
+                <label class="block">Tipo</label>
+                <div class="radio-wrapper flex">
+                  <div class="radio-inner flex flex-1">
+                    <img src="assets/icons/building-2.svg" alt="">
+                    <input type="radio" name="hour" id="in-person">
+                    <label for="in-person">Presencial</label>
+                  </div>
+
+                  <div class="radio-inner flex flex-1">
+                    <img src="assets/icons/video.svg" alt="">
+                    <input type="radio" name="hour" id="online">
+                    <label for="online">On-line</label>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="place" class="block">Local</label>
+                <input type="text" name="place" id="place" placeholder="Link ou endereço">
+              </div>
+            </div>
+
+            <div class="input-wrapper margin-top-16">
+              <div class="textarea-wrapper">
+                <label for="description" class="block">Descrição</label>
+                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+            </div>
+
           </fieldset>
         </form>
       </div>

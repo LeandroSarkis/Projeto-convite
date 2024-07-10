@@ -23,7 +23,14 @@ main {
   & #main-container {
     max-width: 35rem;
     margin: auto;
+
+    h2 {
+      font: var(--title-md);
+      color: var(--text-heading);
+    }
   }
+
+
 }
 
 aside {
@@ -53,7 +60,7 @@ aside {
 
     p {
       font: var(--text-sm);
-      color: var(--text-heading);
+      color: var(--text-body);
       font-weight: 100;
     }
 

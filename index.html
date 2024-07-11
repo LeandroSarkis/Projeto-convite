@@ -61,7 +61,7 @@
             <div class="flex gap-16 margin-top-16">
               <div class="input-wrapper flex-1">
                 <label class="block">Tipo</label>
-                <div class="radio-wrapper flex">
+                <div class="radio-wrapper-turn flex">
                   <div class="radio-inner flex flex-1">
                     <img src="assets/icons/building-2.svg" alt="">
                     <input type="radio" name="hour" id="in-person">
@@ -86,16 +86,190 @@
             <div class="input-wrapper margin-top-16">
               <div class="textarea-wrapper">
                 <label for="description" class="block">Descrição</label>
-                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                <textarea name="description" id="description"
+                  placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
             </div>
 
           </fieldset>
+
+          <fieldset>
+            <legend>
+              <img src="assets/icons/paintbrush-vertical.svg" alt="">
+              <span>Personalização</span>
+            </legend>
+
+            <div class="input-wrapper">
+              <label class="block">Cor principal</label>
+              <div class="radio-wrapper-color flex">
+
+                <div class="radio-inner brand-light-bg">
+                  <input type="radio" name="color" id="brand-light">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner navy-bg">
+                  <input type="radio" name="color" id="navy">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner purple-bg">
+                  <input type="radio" name="color" id="purple">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner fuschia-bg">
+                  <input type="radio" name="color" id="fuschia">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner pink-bg">
+                  <input type="radio" name="color" id="pink">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner danger-bg">
+                  <input type="radio" name="color" id="danger">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner orange-bg">
+                  <input type="radio" name="color" id="orange">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner yellow-bg">
+                  <input type="radio" name="color" id="yellow">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner lime-bg">
+                  <input type="radio" name="color" id="lime">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner green-bg">
+                  <input type="radio" name="color" id="green">
+                  <label for="color"></label>
+                </div>
+                <div class="radio-inner cyan-bg">
+                  <input type="radio" name="color" id="cyan">
+                  <label for="color"></label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="input-wrapper margin-top-28">
+
+              <label class="block">Tema do evento</label>
+              <div class="radio-wrapper-img grid">
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/aniversario.png " alt="foto de um bolo de aniversario">
+                  <input type="radio" name="theme" id="birthday">
+                  <label for="birthday">Aniversário</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/infantil.png " alt="foto de um aniversario infantil">
+                  <input type="radio" name="theme" id="kids-birthday">
+                  <label for="kids-birthday">Infantil</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/formatura.png " alt="foto de uma formatura">
+                  <input type="radio" name="theme" id="graduation">
+                  <label for="graduation">Formatura</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/casamento.png " alt="foto de aliancas de casamento">
+                  <input type="radio" name="theme" id="marriage">
+                  <label for="marriage">Casamento</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/cha-bebe.png " alt="foto de uma cha de bebe">
+                  <input type="radio" name="theme" id="baby-tea">
+                  <label for="baby-tea">Chá de bebê</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/cha-panela.png " alt="foto de uma cozinha">
+                  <input type="radio" name="theme" id="pan-tea">
+                  <label for="pan-tea">Chá de bebê</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/carnaval.png " alt="foto do carnaval">
+                  <input type="radio" name="theme" id="carnival">
+                  <label for="carnival">Carnaval</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/pascoa.png " alt="foto de um ovo de pascoa">
+                  <input type="radio" name="theme" id="easter">
+                  <label for="easter">Páscoa</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/sao-joao.png " alt="foto do sao joao">
+                  <input type="radio" name="theme" id="sao-joao">
+                  <label for="sao-joao">São joão</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/hallowen.png " alt="foto de aboboras de hallowen">
+                  <input type="radio" name="theme" id="hallowen">
+                  <label for="hallowen">hallowen</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/natal.png " alt="foto de presentes de natal">
+                  <input type="radio" name="theme" id="christmas">
+                  <label for="christmas">Natal</label>
+                </div>
+
+                <div class="radio-inner">
+                  <img src="assets/imgs/outro.png " alt="foto de varias maos">
+                  <input type="radio" name="theme" id="other">
+                  <label for="other">Outro</label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="flex margin-top-28">
+              <div class="input-wrapper flex-1">
+                <label for="style" class="block">Estilo</label>
+
+                <div class="checkbox-wrapper-switch flex">
+                  <div class="checkbox-inner">
+                    <input type="checkbox" name="style" id="style">
+                    <div class="ball"></div>
+                  </div>
+                  <div class="state"><span>Escuro</span></div>
+
+
+                </div>
+              </div>
+
+              <div class="input-wrapper flex-2">
+                <label for="capa" class="block">Foto de capa</label>
+                <div class="file-wrapper flex">
+                  <div class="file-inner">
+                    <div>
+                      <img src="assets/icons/upload.svg" alt="ícone de upload">
+                      <span>Selecionar</span>
+                      <input type="file" name="capa" id="capa">
+                    </div>
+                  </div>
+                  <span>Nenhum arquivo selecionado</span>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+          </fieldset>
+
         </form>
       </div>
-
     </main>
-
   </div>
 </body>
 

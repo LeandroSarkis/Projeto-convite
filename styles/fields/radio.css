@@ -1,4 +1,19 @@
-.radio-wrapper {
+
+
+.radio-inner {
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+      
+  }
+}
+
+
+.radio-wrapper-turn {
   margin-top: 0.75rem;
   height: 3rem;
   box-sizing:border-box;
@@ -8,51 +23,97 @@
   align-items: center;
 
   position: relative;
-}
 
-.radio-inner {
+  .radio-inner {
   
-  position: relative;
-  place-items: center;
-  gap: 0.375rem 0.375rem;
-
-  margin: 0.25rem;
-  padding: 0.75rem 1.125rem;
-
-  & input,
-  & input:focus,
-  & input:hover {
-    all: unset;
-    position: absolute;
-    inset: 0;
     
-  }
-
-  & label {
-    margin: 0;
-    display: block;
-  }
-
-  & img {
-    height: 1rem;
-    width: 1rem;
-  }
+    place-items: center;
+    gap: 0.375rem 0.375rem;
+  
+    margin: 0.25rem;
+    padding: 0.75rem 1.125rem;
   
 
-  &:hover, &:focus-within {
-    background-color: var(--shape-hover);
-    
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
   
-  &:has(:checked) {
-    background-color: var(--shape-hover);
-    
-    border-radius: 0.25rem;
-
+    & label {
+      margin: 0;
+      display: block;
+    }
+  
     & img {
-      filter: invert(65%) sepia(39%) saturate(3080%) hue-rotate(184deg) brightness(103%) contrast(104%);
+      height: 1rem;
+      width: 1rem;
+    }
+    
+  
+    &:hover, &:focus-within {
+      background-color: var(--shape-hover);
+      
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+    
+    &:has(:checked) {
+      background-color: var(--shape-hover);
+      
+      border-radius: 0.25rem;
+  
+      & img {
+        filter: invert(65%) sepia(39%) saturate(3080%) hue-rotate(184deg) brightness(103%) contrast(104%);
+      }
     }
   }
 }
+
+.radio-wrapper-color {
+  gap: 0.75rem;
+  justify-content: space-between;
+  position: relative;
+
+  .radio-inner {
+    width: 1.75rem;
+    height: 1.75rem;
+
+    border-radius: 62rem;
+    border: 0.375rem solid var(--shape-button);
+
+    &:hover, &:focus-within {
+      border: 0.375rem solid var(--shape-hover);
+      cursor: pointer;
+    }
+
+    &:has(:checked) {
+      
+      outline: 1px solid var(--brand-light);
+    }
+  }
+
+
+
+}
+
+.radio-wrapper-img {
+  
+   
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+
+    .radio-inner {
+      text-align: center;
+      background-color: var(--shape-button);
+
+      border: 1px solid var(--input-stroke);
+      border-radius: 0.5rem;
+      padding: 0.25rem 0.25rem 0.5rem;
+
+      &:hover, &:focus-within {
+        background-color: var(--shape-hover);
+        cursor: pointer;
+      }
+
+      &:has(:checked) {
+      
+        outline: 1px solid var(--brand-light);
+      }
+    }
+  }

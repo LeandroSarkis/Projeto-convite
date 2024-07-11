@@ -18,6 +18,58 @@
   margin-top: 1rem;
 }
 
+.margin-top-28 {
+  margin-top: 1.75rem;
+}
+
 .flex-1 {
   flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.brand-light-bg {
+  background-color: var(--brand-light);
+}
+
+.navy-bg {
+  background-color: var(--navy);
+}
+
+.purple-bg {
+  background-color: var(--purple);
+}
+
+.fuschia-bg {
+  background-color: var(--fuschia);
+}
+
+.pink-bg {
+  background-color: var(--pink);
+}
+
+.danger-bg {
+  background-color: var(--danger);
+}
+
+.orange-bg {
+  background-color: var(--orange);
+}
+
+.yellow-bg {
+  background-color: var(--yellow);
+}
+
+.lime-bg {
+  background-color: var(--lime);
+}
+
+.green-bg {
+  background-color: var(--green);
+}
+
+.cyan-bg {
+  background-color: var(--cyan);
 }

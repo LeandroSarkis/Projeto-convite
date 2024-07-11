@@ -1,0 +1,75 @@
+.checkbox-wrapper-switch {
+  position: relative;
+
+  align-items: center;
+  gap: 0.75rem;
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .state span {
+    color: var(--text-heading);
+  }
+
+  .checkbox-inner {
+    width: 4rem;
+    height: 2rem;
+
+    background-color: var(--input-base);
+
+    border: 1px solid var(--input-stroke);
+    border-radius: 62.5rem;
+
+    cursor: pointer;
+    position: relative;
+
+    .ball {
+      background-color: var(--input-stroke);
+
+      width: 1.5rem;
+      height: 1.5rem;
+
+      border-radius: 62.5rem;
+      pointer-events: none;
+
+      margin: 0.25rem 0 0.25rem 0.25rem;
+    }
+
+
+  }
+
+  &:has(:checked) {
+
+    .checkbox-inner {
+      background-color: var(--brand-light);
+  
+      .ball {
+        background-color: var(--text-heading);
+  
+        margin: 0.25rem 0.25rem 0.25rem 2.25rem;
+      }
+    }
+
+    .state span {
+      display: none;
+    }
+
+    .state::after {
+     content: 'Claro';
+     color: var(--text-heading);
+    }
+  }
+
+  
+
+  .ball {
+    z-index: 1;
+    position: absolute;
+
+  }
+}

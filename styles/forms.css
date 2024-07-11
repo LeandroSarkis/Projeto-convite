@@ -1,9 +1,11 @@
 
+form {
+  width: 36.875rem;  
+}
+
 fieldset {
   border: none;
   padding: 0;
-
-  
 
   legend {
     display: flex;
@@ -15,4 +17,8 @@ fieldset {
       color: var(--text-heading);
     }
   }
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
 }
